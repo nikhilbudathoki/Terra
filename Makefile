@@ -1,12 +1,12 @@
 build:
-    g++ -w -std=c++14 -Wfatal-errors -m32 -static-libstdc++ \
+	g++ -w -std=c++14 -Wfatal-errors -m32 -static-libstdc++ \
     ./src/*.cpp \
     -o game.exe \
-    -IC:\SDL\SDL2\include \
-    -LC:\SDL\SDL2\lib \
+    -IC:\libsdl\SDL2\include \
+    -LC:\libsdl\SDL2\lib \
     -I.\lib\lua \
     -L.\lib\lua \
-    -llua53 \
+    -llua54 \
     -lmingw32 \
     -lSDL2main \
     -lSDL2_image \
@@ -15,7 +15,7 @@ build:
     -lSDL2
  
 clean:
-    del game.exe
+	del game.exe
  
 run:
-    game.exe
+	game.exe
