@@ -89,8 +89,12 @@ void Game::Update() {
 }
 
 void Game::Render() {
+    // Set background color
     SDL_SetRenderDrawColor(renderer, 21, 21, 21, 255);
+    // Clear back buffer
     SDL_RenderClear(renderer);
+
+    // Draw objects of the scene on backbuffer
     SDL_Rect projectile{(int)projectilePos.x, (int)projectilePos.y, 10, 10};
     SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
     SDL_RenderFillRect(renderer, &projectile);
