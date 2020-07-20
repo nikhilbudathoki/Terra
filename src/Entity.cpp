@@ -27,3 +27,7 @@ void Entity::Destroy() {
 bool Entity::IsActive() const {
     return this->isActive;
 }
+
+std::vector<Component*> Entity::getComponents() {
+    return this->components;
+}

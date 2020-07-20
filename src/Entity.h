@@ -1,5 +1,6 @@
 #ifndef ENTITY_H
 #define ENTITY_H
+#include <iostream>
 #include <string>
 #include <vector>
 
@@ -23,6 +24,7 @@ class Entity {
     void Render();
     void Destroy();
     bool IsActive() const;
+    std::vector<Component*> getComponents();
 
     template <typename T, typename... TArgs>
     T& AddComponent(TArgs&&... args) {
@@ -33,5 +35,6 @@ class Entity {
         return *newComponent;
     }
 };
+
 
 #endif
