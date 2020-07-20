@@ -16,7 +16,7 @@ class Game {
    public:
     Game();
     ~Game();
-    int ticksLastFrame;
+    int ticksLastFrame = 0;
     bool IsRunning() const;
     static SDL_Renderer *renderer;
     void LoadLevel(int levelNumber);

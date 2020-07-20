@@ -9,7 +9,6 @@
 #include "../Game.h"
 
 class TransformComponent : public Component {
-   private:
    public:
     glm::vec2 position;
     glm::vec2 velocity;
@@ -29,8 +28,8 @@ class TransformComponent : public Component {
     }
 
     void Update(float deltaTime) override {
-        //TODO
-        //update the position/velocity as a func of deltatime
+        position.x += velocity.x * deltaTime;
+        position.y += velocity.y * deltaTime;
     }
 
     void Render() override {
