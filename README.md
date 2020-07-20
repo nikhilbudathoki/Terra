@@ -1,5 +1,5 @@
 # Terra
-Terra is a small game engine built in C++ with SDL and Lua. Here is a lsit of the features currently supposed by Terra:
+Terra is a high performance 2D game engine built in C++ and SDL with integrated support for Lua scripting. Here is a list of the features currently supposed by Terra:
 - Dynamic Camera movement
 - Lua script support
 - Input handling 
