@@ -14,10 +14,4 @@ class Component {
     virtual void Render() {}
 };
 
-Component::Component(/* args */) {
-}
-
-Component::~Component() {
-}
-
 #endif

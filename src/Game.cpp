@@ -5,6 +5,9 @@
 #include "../lib/glm/glm.hpp"
 #include "Constants.h"
 
+EntityManager manager;
+SDL_Renderer* Game::renderer;
+
 Game::Game() {
     this->isRunning = false;
 }
