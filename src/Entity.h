@@ -3,6 +3,7 @@
 #include <iostream>
 #include <map>
 #include <string>
+#include <typeinfo>
 #include <vector>
 
 #include "Component.h"
