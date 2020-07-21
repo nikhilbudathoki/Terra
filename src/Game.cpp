@@ -3,10 +3,13 @@
 #include <iostream>
 
 #include "../lib/glm/glm.hpp"
+#include "AssetManager.h"
+#include "Components/SpriteComponent.h"
 #include "Components/TransformComponent.h"
 #include "Constants.h"
 
 EntityManager manager;
+AssetManager* Game::assetManager = new AssetManager(&manager);
 SDL_Renderer* Game::renderer;
 
 Game::Game() {
@@ -49,10 +52,9 @@ void Game::Initialize(int width, int height) {
 }
 
 void Game::LoadLevel(int levelNumber) {
+    // Start including new assets to the assetmanager list
     Entity& newEntity(manager.AddEntity("projectile"));
     newEntity.AddComponent<TransformComponent>(0, 0, 20, 20, 32, 32, 1);
-    Entity& nextEntity(manager.AddEntity("projectile2"));
-    nextEntity.AddComponent<TransformComponent>(768, 568, -20, -20, 32, 32, 1);
 }
 
 void Game::ProcessInput() {
