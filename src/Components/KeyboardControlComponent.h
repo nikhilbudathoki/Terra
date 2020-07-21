@@ -67,6 +67,7 @@ class KeyboardControlComponent : public Component {
             if (keyCode.compare(shootKey) == 0) {
                 //TODO
                 // Shoot missiles when 'shoot' key is pressed
+                //
             }
         }
         if (Game::event.type == SDL_KEYUP) {
