@@ -27,6 +27,7 @@ class Entity {
     void Render();
     void Destroy();
     bool IsActive() const;
+    void ListAllComponents() const;
 
     template <typename T, typename... TArgs>
     T& AddComponent(TArgs&&... args) {
@@ -40,6 +41,14 @@ class Entity {
     template <typename T>
     T* GetComponent() {
         return static_cast<T*>(componentTypeMap[&typeid(T)]);
+    }
+
+    template <typename T>
+    bool HasComponent() {
+        if (componentTypeMap.find(&typeid(T)) == componentTypeMap.end()) {
+            return false;
+        }
+        return true;
     }
 };
 
