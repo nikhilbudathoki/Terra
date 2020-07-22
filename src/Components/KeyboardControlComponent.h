@@ -1,6 +1,7 @@
 #ifndef KEYBOARDCONTROLCOMPONENT_H
 #define KEYBOARDCONTROLCOMPONENT_H
 
+#include "../Components/SpriteComponent.h"
 #include "../Components/TransformComponent.h"
 #include "../EntityManager.h"
 #include "../Game.h"

@@ -1,5 +1,5 @@
 #ifndef SPRITECOMPONENT_H
-#define SPRINTCOMPONENT_H
+#define SPRITECOMPONENT_H
 
 #include "../../../MinGW/include/SDL2/SDL.h"
 #include "../Animation.h"
