@@ -75,7 +75,7 @@ void Game::LoadLevel(int levelNumber) {
 
     // Start including entities and also components to them
     Entity& tankEntity(manager.AddEntity("tank", ENEMIES_LAYER));
-    tankEntity.AddComponent<TransformComponent>(0, 0, 20, 20, 32, 32, 1);
+    tankEntity.AddComponent<TransformComponent>(150, 495, 5, 0, 32, 32, 1);
     tankEntity.AddComponent<SpriteComponent>("tank-image");
 
     Entity& radarEntity(manager.AddEntity("radar", UI_LAYER));
