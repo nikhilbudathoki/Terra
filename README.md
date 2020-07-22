@@ -12,4 +12,12 @@ Terra is a high performance 2D game engine built in C++ and SDL with integrated 
 - Graphics and Text rendering and UI elements 
 
 ## Try it out
-In order to try it out, feel free to clone the repository. You will need SDL installed. The Makefile alongside the included `lib` folder should take care of the rest!
+You will need to clone the repository to try it out. 
+Then, run the makefile with `make build` followed by `make run` to see a prototype of a top-down tank shooting game prototype created in the engine.
+
+
+
+## Next Steps
+More prototypes developed in the engine will be pushed to the repository soon. 
+
+Also, I will be adding detailed instrutions on how to write your own Lua scripts specifying game parameters to pass in to the engine. 
