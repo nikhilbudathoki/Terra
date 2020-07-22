@@ -19,3 +19,4 @@ clean:
  
 run:
 	game.exe
+    
